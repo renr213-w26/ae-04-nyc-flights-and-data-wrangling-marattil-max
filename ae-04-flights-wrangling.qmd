@@ -8,14 +8,14 @@ title: "AE 04: NYC flights + data wrangling"
 
 library(tidyverse)
 library(nycflights13)
+nrow(flights)
 ```
 
 ## Exercise 1
 
 **Your turn:** Fill in the blanks:
 
-The `flights` data frame has \_\_\_ rows.
-Each row represents a \_\_\_.
+The `flights` data frame has `336776` rows. Each row represents a `flight`.
 
 ## Exercise 2
 
@@ -24,7 +24,7 @@ Each row represents a \_\_\_.
 ```{r}
 #| label: column-names
 
-# add code here
+names(flights)
 ```
 
 ## Exercise 3 - `select()`
@@ -33,7 +33,8 @@ Each row represents a \_\_\_.
 
 ```{r}
 #| label: select-vars
-
+flights |>
+  sclice
 # add code here
 ```
 
